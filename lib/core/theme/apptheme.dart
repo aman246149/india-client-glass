@@ -7,7 +7,7 @@ class AppTheme {
   AppTheme._();
 
   static ThemeData theme = ThemeData(
-    scaffoldBackgroundColor: Colors.black,
+    scaffoldBackgroundColor: Colors.white,
     primaryColor: AppColors.primary,
     primarySwatch:
         MaterialColor(AppColors.primary.value, AppColors.primaryPallet),
@@ -39,16 +39,16 @@ class AppTheme {
       bodyText2: bodyText2);
 
   static TextStyle headline1 = GoogleFonts.workSans(
-      fontWeight: FontWeight.w700, fontSize: 34, color: Colors.white);
+      fontWeight: FontWeight.w700, fontSize: 34, color: Colors.black);
 
   static TextStyle headline6 = GoogleFonts.workSans(
       fontWeight: FontWeight.w600, fontSize: 12, color: Colors.black);
 
   static TextStyle bodyText1 = GoogleFonts.workSans(
-      fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white);
+      fontWeight: FontWeight.bold, fontSize: 20, color: Colors.black);
 
   static TextStyle bodyText2 = GoogleFonts.workSans(
-      fontWeight: FontWeight.w400, fontSize: 12, color: Colors.white);
+      fontWeight: FontWeight.w400, fontSize: 12, color: Colors.black);
 
   static ButtonStyle primaryTextButtonStyle = TextButton.styleFrom(
       foregroundColor: Colors.white,
