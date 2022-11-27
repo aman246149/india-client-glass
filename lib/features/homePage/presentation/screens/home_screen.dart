@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
             return ClipRRect(
               borderRadius: const BorderRadius.all(Radius.circular(20)),
               child: Card(
-                color: Colors.cyan,
+                color: Color(0xff9F73AB),
                 child: Center(
                     child: Text(
                   cardNames[index],

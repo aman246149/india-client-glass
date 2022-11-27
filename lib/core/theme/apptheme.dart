@@ -18,7 +18,7 @@ class AppTheme {
   );
 
   static AppBarTheme appBarTheme = AppBarTheme(
-    color: Colors.black,
+    color: Color(0xff3F3B6C),
     centerTitle: true,
     titleTextStyle: appBarTitleTheme,
     iconTheme: appBarIconTheme,
