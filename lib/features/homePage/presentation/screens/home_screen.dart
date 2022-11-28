@@ -1,3 +1,5 @@
+import 'package:architecture/core/routes/router.gr.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -32,16 +34,21 @@ class _HomePageState extends State<HomePage> {
             mainAxisSpacing: 5,
           ),
           itemBuilder: (context, index) {
-            return ClipRRect(
-              borderRadius: const BorderRadius.all(Radius.circular(20)),
-              child: Card(
-                color: Color(0xff9F73AB),
-                child: Center(
-                    child: Text(
-                  cardNames[index],
-                  style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                      fontWeight: FontWeight.bold, color: Colors.white),
-                )),
+            return GestureDetector(
+              onTap: () {
+                context.router.push(OptimizeRoute());
+              },
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
+                child: Card(
+                  color: Color(0xff9F73AB),
+                  child: Center(
+                      child: Text(
+                    cardNames[index],
+                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        fontWeight: FontWeight.bold, color: Colors.white),
+                  )),
+                ),
               ),
             );
           },
